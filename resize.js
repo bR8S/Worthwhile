@@ -3,8 +3,6 @@ function setDivHeightAsCSSVariable() {
     const timelineCards = document.querySelectorAll('.plan-card')
     const timelineSteps = document.querySelectorAll('.plan-line')
 
-    const timeline = document.querySelector('.plan-timeline')
-
     const timelineCardsArr = Array.from(timelineCards)
     const timelineStepsArr = Array.from(timelineSteps)
 
@@ -25,15 +23,15 @@ function setDivHeightAsCSSVariable() {
     const targetDiv = document.querySelector('.plan-card-first');
     const height = targetDiv.offsetHeight;
 
-    // Set the CSS variable with the width
     document.documentElement.style.setProperty('--target-div-height', `${height}px`);
 }
+
+/* height = (TARGET DIV HEIGHT + MARGIN BOT) - (DOT HEIGHT + PADDING TOP + PADDING BOT) */
 
 function handleDesktopResize(card, step){
     const dotHeight = 20
     const padding = 40
 
-    /* height = (TARGET DIV HEIGHT + MARGIN BOT) - (DOT HEIGHT + PADDING TOP + PADDING BOT) */
     step.style.height = card.offsetHeight - (dotHeight + padding) + "px"
 }
 
@@ -41,15 +39,13 @@ function handleTabletResize(card, step){
     const dotHeight = 20
     const padding = 48
 
-    /* height = (TARGET DIV HEIGHT + MARGIN BOT) - (DOT HEIGHT + PADDING TOP + PADDING BOT) */
     step.style.height = (card.offsetHeight + 32) - (dotHeight + padding) + "px"
 }
 
 function handleMobileResize(card, step){
     const dotHeight = 16
     const padding = 48
-
-    /* height = (TARGET DIV HEIGHT + MARGIN BOT) - (DOT HEIGHT + PADDING TOP + PADDING BOT) */
+    
     step.style.height = (card.offsetHeight + 32) - (dotHeight + padding) + "px"
 }
 

@@ -243,5 +243,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
             opacity: 1,
         })
     })
-
 });
