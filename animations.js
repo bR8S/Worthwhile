@@ -243,4 +243,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
             opacity: 1,
         })
     })
+
+    const aboutImgKnob = document.querySelector('.about-img-2')
+
+    gsap.to(aboutImgKnob, {
+        scrollTrigger: {
+            trigger: aboutImgKnob,
+            scrub: 1,
+            toggleActions: "play pause reverse reset"
+        },
+        rotate: 360
+    })
 });
