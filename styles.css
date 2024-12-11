@@ -584,9 +584,9 @@ canvas {
 
 .about-img-2 {
     position: absolute;
-    top: 61%;
-    left: 38%;
-    width: 49%;
+    top: 57%;
+    left: 34%;
+    width: 56%;
 }
 
 @media screen and (max-width: 1600px){
@@ -773,7 +773,9 @@ canvas {
     }
 
     .about-img-2 {
-        top: 64%;
+        top: 61%;
+        left: 37%;
+        width: 50%;
     }
 }
 
@@ -904,7 +906,9 @@ canvas {
     }
 
     .about-img-2 {
-        top: 66%;
+        top: 63%;
+        left: 34%;
+        width: 52%;
     }
 }
 
@@ -950,8 +954,8 @@ canvas {
     }
 
     .about-img-2 {
-        top: 74%;
-        left: 40%;
-        width: 45%;
+        top: 70%;
+        left: 36%;
+        width: 50%;
     }
 }
