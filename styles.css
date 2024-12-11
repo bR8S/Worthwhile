@@ -264,7 +264,7 @@ canvas {
     display: flex;
     flex-direction: column;
     width: 40%;
-    max-width: 570px;
+    max-width: 550px;
     padding: 32px;
     border-radius: 10px;
     border: 1.5px solid #F8E813;
